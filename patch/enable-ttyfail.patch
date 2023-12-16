@@ -1,0 +1,11 @@
+diff -ur .build/src/main.c .build.patch/src/main.c
+--- .build/src/main.c	2022-06-28 00:13:04.000000000 +0200
++++ .build.patch/src/main.c	2023-12-16 04:24:15.321463657 +0100
+@@ -1959,6 +1959,7 @@
+     --argc;
+     ++argv;
+     argv_idx = 1;	    // active option letter is argv[0][argv_idx]
++    parmp->tty_fail = TRUE;
+     while (argc > 0)
+     {
+ 	/*

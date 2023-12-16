@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+update-alternatives --install /usr/bin/vim vim /usr/local/wyga/vim/bin/vim 10
+update-alternatives --install /usr/bin/vi vi /usr/local/wyga/vim/bin/vim 10
+update-alternatives --install /usr/bin/vimdiff vimdiff /usr/local/wyga/vim/bin/vimdiff 10
+
+exit 0

@@ -1,0 +1,9 @@
+Package: wyga-vim
+Version: 8.2-${RELEASE}
+Section: editors
+Priority: optional
+Provides: editor, vim
+Architecture: amd64
+Maintainer: Robert Socha <socha@socha.it>
+Installed-Size: ${SIZE_OF_PACKAGE}
+Description: wyga-vim
