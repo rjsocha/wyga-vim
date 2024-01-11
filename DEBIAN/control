@@ -1,5 +1,5 @@
 Package: wyga-vim
-Version: 8.2-${RELEASE}
+Version: 8.2.${RELEASE}-${VERSION}
 Section: editors
 Priority: optional
 Provides: editor, vim

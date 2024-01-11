@@ -9,6 +9,7 @@ tar --strip-components=1 -xzf vim-8.2.tar.gz
 patch -p1  <../patch/enable-ttyfail.patch
 ./configure --prefix=/usr/local/wyga/vim --with-features=normal --enable-multibyte --disable-gui --disable-xsmp --disable-xsmp-interact --disable-netbeans --disable-nls --enable-acl --disable-gpm --disable-canberra --disable-selinux --disable-smack --enable-terminal --without-x --with-compiledby=wyga@wyga.build --enable-fail-if-missing --disable-arabic --enable-xim=no --with-global-runtime=/usr/local/wyga/vim/runtime
  
+#export CFLAGS="-DSYS_VIMRC_FILE="'\"/etc/site/wyga/vimrc\"'""
 make VIMRCLOC=/etc VIMRUNTIMEDIR=/usr/local/wyga/vim/runtime MAKE="make -e" -j8
 make install DESTDIR=${DEST}
 mv ${DEST}/usr/local/wyga/vim/share/vim/vim82 ${DEST}/usr/local/wyga/vim/runtime

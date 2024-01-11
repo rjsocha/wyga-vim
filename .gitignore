@@ -1,4 +1,4 @@
 .deb
 .build
-wyga-vim_8.2.deb
+*.deb
 .size
